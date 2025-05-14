@@ -6,7 +6,6 @@ def calculate_average(nums):
     else:
         avg=sum(nums)/len(nums)
         return avg
-print("easy1")
 print(calculate_average([5, 10, 15, 20]))  
 print(calculate_average([]))
 
@@ -20,7 +19,7 @@ def greet_user(name,*args):
             return f"{a}, {name}!"
     else:
         return f"Hello, {name}!"
-print("easy2")
+
 print(greet_user("Alice")) 
 print(greet_user("Bob", "Hi"))  
 
@@ -36,7 +35,6 @@ def calculate_total(*args,discount=0):
         total_cost -= (total_cost*discount)/100
     return int(total_cost)
 
-print("medium1")
 print(calculate_total(10, 20, 30)) 
 print(calculate_total(10, 20, 30, discount=10)) 
 
@@ -50,7 +48,6 @@ def create_multiplier(n):
     return func
 double = create_multiplier(2)
 triple = create_multiplier(3)
-print("medium2")
 print(double(5))  
 print(triple(5))
 
@@ -68,7 +65,6 @@ def power(x,n):
         return pow1*pow1
     else:
         return x* x**(n-1)
-print("hard1")
 print(power(2, 10)) 
 print(power(3, 4))
 
@@ -89,5 +85,4 @@ def double(x): return x * 2
 def square(x): return x ** 2
 
 f = compose(square, double, add_one)
-print("hard2")
 print(f(3)) 
